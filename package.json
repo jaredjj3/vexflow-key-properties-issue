@@ -1,0 +1,15 @@
+{
+  "name": "vexflow-key-properties-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn jest --watchAll",
+    "test:docker": "docker build . -t vexflowtest:latest && docker run -it -v ./src:/app/src vexflowtest:latest yarn test",
+    "test:docker:amd64": "docker build . -t vexflowtestamd64:latest --platform linux/amd64 && docker run -it -v ./src:/app/src vexflowtestamd64:latest yarn test"
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "vexflow": "^4.2.3"
+  }
+}
