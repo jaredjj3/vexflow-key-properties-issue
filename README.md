@@ -1,6 +1,6 @@
 # vexflow-key-properties-issue
 
-Reproduction repo for (#TBD).
+Reproduction repo for https://github.com/0xfe/vexflow/issues/1595.
 
 ## Environment
 
